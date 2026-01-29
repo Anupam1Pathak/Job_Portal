@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+
+body {
+    background: linear-gradient(to right, #2f3e46, #3a5a6b);
+    color: #fff;
+}
+
+
+header {
+    background: linear-gradient(90deg, crimson, #a3002a);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    display: inline;
+    margin-left: 10px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd166;
+    text-decoration: underline;
+}
+
+nav button {
+    background: #ffd166;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background: #ffb703;
+    transform: scale(1.05);
+}
+
+
+h2, h3 {
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    border: none;
+    width: 200px;
+}
+
+input[type="submit"] {
+    background: #06d6a0;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #00b383;
+    transform: scale(1.05);
+}
+
+
+button {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    background: #ffffff10;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button img {
+    border-radius: 10px;
+    filter: brightness(0.95) contrast(1.1);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+button:hover img {
+    filter: brightness(1.1) contrast(1.2);
+}
+
+
+table {
+    background: #ffffff0d;
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+}
+
+table h2 {
+    color: #ffd166;
+}
+
+table p {
+    color: #ddd;
+}
+
+
+td img {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+td img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* ===== FOOTER AREA ===== */
+table:last-of-type {
+    background: #1b263b;
+    color: #ccc;
+}
+
+table:last-of-type a {
+    color: #ffd166;
+    text-decoration: none;
+}
+
+table:last-of-type a:hover {
+    text-decoration: underline;
+}
+
+
+input[placeholder="MO number"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 10px;
+}
+
+
+a, button, img, input {
+    transition: all 0.3s ease;
+}
