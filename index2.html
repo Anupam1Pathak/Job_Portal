@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Search Website</title>
     <link rel="stylesheet"  href="style.css">
+    <script src="script.js"></script>
 </head>
 
-<body style="background-color: lightslategray;">
-    <header style="background-color:crimson">
+<body style="background-color: rgb(241, 8, 8);">
+    <header style="background-color:rgba(237, 5, 21, 0.953)">
         
             <table width ="100%"  cellpadding="10">
                 <tr>
@@ -26,14 +27,20 @@
             <a href ="login.html"><button>Login</button></a>
             <a href ="employers.html"></a>
             
-              <label>For Employers:</label>
-              <select>
-               <option>Choose option</option>
-               <option>Post a Job</option>
-               <option>Search Resumes</option>
-               <option>Employer Login</option>
-                <option>Plans & Pricing</option>
-                </select>
+              <label id="employers">For Employers:</label>
+              <select id="employerOptions" onchange="navigateEmployerOption()">
+
+<option value="">Choose option</option>
+
+<option value="postjob.html">Post a Job</option>
+
+<option value="search.html">Search Resumes</option>
+
+<option value="login.html">Employer Login</option>
+
+<option value="plans.html">Plans & Pricing</option>
+
+</select>
 
                  </nav>
                     </td>
@@ -43,6 +50,16 @@
 
     <h2 align ="center">Find your dream job now</h2>
     <h3 align = "center">10 lakh+ jobs for you to explore</h3>
+
+    <div id="joblist"></div>
+    <script src="script.js"></script>
+
+<script>
+
+showJob();
+
+</script>
+
     <center>
         <form>
             <input  type ="text" placeholder="enter skills /company">
@@ -57,6 +74,7 @@
             <input type ="submit" value="search">
         </form>
     </center>
+    
 <br><br>
 <center>
     <button>

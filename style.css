@@ -8,7 +8,7 @@
 
 
 body {
-    background: linear-gradient(to right, #2f3e46, #3a5a6b);
+    background: linear-gradient(to right, #46372f, #45536a);
     color: #fff;
 }
 
@@ -169,3 +169,9 @@ a, button, img, input {
     transition: all 0.3s ease;
 }
 
+#joblist
+{
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
