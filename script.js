@@ -27,7 +27,7 @@ var location =
 document.getElementById("location").value;
 
 
-// save in localStorage
+
 
 localStorage.setItem("title", title);
 
@@ -41,7 +41,7 @@ alert("Job Added Successfully");
 
 
 
-// show job on dashboard
+
 
 function showJob()
 {
