@@ -102,3 +102,52 @@ document.getElementById("joblist").appendChild(job);
 }
 
 }
+
+//for searching job
+
+const domainCompanies = {
+
+    "data science": [
+        "Google",
+        "Microsoft",
+        "Amazon"
+    ],
+
+    "web development": [
+        "Infosys",
+        "TCS",
+        "Wipro"
+    ],
+
+    "machine learning": [
+        "Meta",
+        "Apple",
+        "Nvidia"
+    ]
+
+};
+
+
+function searchDomain(){
+
+    let input = document.getElementById("searchBox").value.toLowerCase();
+
+    let list = document.getElementById("companyList");
+
+    list.innerHTML = "";
+
+    if(domainCompanies[input]){
+
+        domainCompanies[input].forEach(function(company){
+
+            let li = document.createElement("li");
+
+            li.textContent = company;
+
+            list.appendChild(li);
+
+        });
+
+    }
+
+}

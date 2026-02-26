@@ -175,3 +175,27 @@ a, button, img, input {
     margin: 30px auto;
     text-align: center;
 }
+
+ /*for searching companies*/
+
+ body{
+    font-family: Arial;
+    padding: 20px;
+}
+
+input{
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+li{
+    padding: 8px;
+    background: #e80909;
+    margin: 5px;
+    list-style: none;
+}
